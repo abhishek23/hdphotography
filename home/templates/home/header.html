@@ -2,11 +2,38 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="{% static '/home/' %}">
+	<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'home/css/custom_css.css' %}">
+	<script src="{% static 'home/js/jquery.min.js' %}"></script>
+	<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+	<style>
+	.container-fluid{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	html, body{
+		height: 100%;
+	}
+	</style>
 </head>
-<body class="container">
-	<h3>Header will be displayed here.</h3>
+<body>
+	<div class="container-fluid" style="width: 35%; margin: 0 auto;">
+		<nav class="navbar navbar-inverse navbar-custom">
+			<!-- <div class="container-fluid"> -->
+				<ul class="nav navbar-nav">
+					<li><a href="{% url 'index' %}">HOME</a></li>
+					<li><a href="{% url 'weoffer' %}">WE OFFER..</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			<!-- </div> -->
+		</nav>
+		
+	</div>
 	{% block content %}
+
+
+
 	{% endblock %}
 </body>
 </html>
