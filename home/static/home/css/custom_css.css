@@ -30,7 +30,7 @@
 .thumbnail {
 	padding: 0;
 	border: none;
-	height: 800px;
+	height: 200px;
 	overflow: auto;
 }
 
@@ -39,6 +39,6 @@
 }
 
 .thumbnail a > img {
-  height:350px;
+  height:200px;
   width:100%;
 }
