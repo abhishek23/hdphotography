@@ -38,7 +38,7 @@
 	text-align: center;
 }
 
-.thumbnail img{
-    height:350px;
-    width:100%;
+.thumbnail a > img {
+  height:350px;
+  width:100%;
 }
