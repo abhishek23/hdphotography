@@ -1,14 +1,14 @@
 {% extends 'home/header.html' %}
 {% block content %}
 <div class="container" style="margin-top: 100px;">
-	<div class="row">
+	<div class="row" style="display: flex;">
 		{% for event in events %}
 			<div class="col-md-4">
 				<div class="thumbnail">
 					<a href="{{ event.thumbnail.url }}" target="_blank">
 						<img src="{{ event.thumbnail.url }}" alt="Lights">
 						<div class="caption">
-							<p>{{ event.name }}</p>
+							<p class="text-uppercase">{{ event.name }}</p>
 						</div>
 					</a>
 				</div>
