@@ -1,19 +1,17 @@
 {% extends 'weoffer/header.html' %}
 {% block content %}
-<div class="container" style="margin-top: 100px;">
-	<div class="row" style="display: flex;">
-		{% for event in event.images.all %}
-			<div class="col-md-4">
-				<div class="thumbnail">
-					<a href="{{ event.image.url }}" target="_blank">
-						<img src="{{ event.image.url }}" alt="Lights">
-						<div class="caption">
-							<p class="text-uppercase">{{ event.name }}</p>
-						</div>
-					</a>
-				</div>
+	{% for image in event.images.all %}
+		<div class="wedding">
+			<div class="wedding-img-container">
+				<img class="wedding-img" src="{{ image.image.url }}">
 			</div>
-		{% endfor %}
-	</div>
-</div>
+			<div class="wedding-desc">
+				<p>This is a test description for the image displayed above. This statement won't say anything about the image as 
+					we are just testing how description would look. Thanks for reading!
+				</p>
+			</div>
+		</div>
+	{% endfor %}
 {% endblock %}
+
+*************************NEED TO WORK ON DIV PLACEMENTS*************************
