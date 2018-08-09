@@ -1,5 +1,9 @@
 from django.db import models
 
-class Events(models.Model):
+class Event(models.Model):
 	name = models.CharField(max_length=20)
-	thumbnail = models.ImageField(upload_to='events')
+	thumbnail = models.ImageField(upload_to='event_thumbnails')
+
+class EventImage(models.Model):
+	image = models.ImageField(upload_to='event_images')
+	event_id = models.ForeignKey(Event, related_name='images', on_delete=models.CASCADE)

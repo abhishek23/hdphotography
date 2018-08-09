@@ -2,11 +2,14 @@
 {% block content %}
 <div class="container" style="margin-top: 100px;">
 	<div class="row" style="display: flex;">
-		{% for event in events %}
+		{% for event in event.images.all %}
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<a href="{% url 'event_detail' eventId=event.id %}" target="_blank">
-						<img src="{{ event.thumbnail.url }}" alt="Lights" class="img-responsive">
+					<a href="{{ event.image.url }}" target="_blank">
+						<img src="{{ event.image.url }}" alt="Lights">
+						<div class="caption">
+							<p class="text-uppercase">{{ event.name }}</p>
+						</div>
 					</a>
 				</div>
 			</div>
