@@ -43,6 +43,10 @@
 	color: black;
 }
 
+.navbar-custom-weoffer{
+	border-radius: 0px;
+}
+
 .navbar-custom-weoffer .navbar-nav > li{
 	text-shadow: none;
 }

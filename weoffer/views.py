@@ -1,9 +1,16 @@
 from django.shortcuts import render
 from . import models
 
+def divideListInChunks(listToDivide, chunkSize):
+	for i in range(0, len(listToDivide), chunkSize):
+		yield listToDivide[i: i+chunkSize]
+
 def index(request):
-	events = models.Event.objects.all()
-	return render(request, 'weoffer/weoffer.html', {'events': events})
+	events = models.Event.objects.all().order_by('sequence')
+	eventSetOfThree = [each for each in divideListInChunks(events, 3)]
+	print('-------------------------------------')
+	print(eventSetOfThree)
+	return render(request, 'weoffer/weoffer.html', {'eventRows': eventSetOfThree})
 
 def eventDetail(request, eventId):
 	event = models.Event.objects.prefetch_related('images').get(pk=eventId)
