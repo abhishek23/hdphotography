@@ -3,6 +3,7 @@
 	font-style: normal;
 	font-weight: 300;
 	transition: 0.6s;
+	color: #1b1209;
 }
 
 .navbar-custom{
@@ -21,8 +22,8 @@
 	position:fixed; 
 	z-index:10; 
 	width:100%; 
-	background-color: #2B2B2B;
-	color:#FFFFFF;
+	//background-color: #2B2B2B;
+	color:#1b1209;
 	border-color:transparent; 
 	font-family: futura-pt; 
 	font-transform: uppercase;
@@ -31,10 +32,6 @@
 
 .navbar-nav > a{
 	text-shadow: 2px 1px 1px #000;
-}
-
-.navbar-inverse .navbar-nav > a:hover{
-	color: black;
 }
 
 .navbar-custom-weoffer{
@@ -46,7 +43,13 @@
 }
 
 .navbar-custom-weoffer .navbar-nav > a:hover{
-	text-shadow: 0px 0px 3px #FFF;
+	text-shadow: 0px 0px 3px #666;
+	font-weight: 500;
+	transition: 0.9s;
+}
+
+#navbar-weoffer > div > a {
+	color: #3f2a14;
 }
 
 .thumbnail {
@@ -59,16 +62,26 @@
 	text-align: center;
 }
 
+.thumbnail a {
+  text-decoration: none;
+}
+
+.thumbnail a > div > p:hover{
+ 	transition: 0.4s;
+ 	text-shadow: 2px 1px 1px #999;
+}
+
 .thumbnail a > img {
   height:250px;
   width:100%;
+  border-radius: 3px;
 }
 
 .wedding{
-	width: 720px;
-	height: 405px;
+	width: 650px;
+	height: 530px;
 	margin: 0 auto;
-	margin-top: 100px;
+	padding-top: 75px;
 }
 
 .wedding-img{
@@ -80,5 +93,20 @@
 	text-align: center;
 	margin-left: -20px;
 	margin-right: -20px;
+	padding-top: 20px;
 }
 
+.wedding-desc p {
+	font-family: futura-pt-condensed, sans-serif;
+font-style: italic;
+font-weight: 400;
+}
+
+.carousel-inner div.carousel-item > img {
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-fade .carousel-item {
+  transition-duration: .9s;
+}

@@ -1,14 +1,29 @@
 {% extends 'weoffer/header.html' %}
 {% block content %}
-	{% for image in event.images.all %}
-		<div class="wedding">
-			<div class="wedding-img-container">
-				<img class="wedding-img" src="{{ image.image.url }}">
+
+<div class="wedding">
+	<div class="wedding-img-container">
+		<div id="eventDetailCarouselFade" class="carousel slide carousel-fade" data-interval="6000" data-pause="false" data-ride="carousel">
+			<div class="carousel-inner">
+				{% for image in event.images.all %}
+				<div class="carousel-item{% if forloop.first %} active{% endif %}">
+					<img class="d-block w-100" src="{{image.image.url}}" alt="First slide">
+				</div>
+				{% endfor %}
 			</div>
-			<div class="wedding-desc">
-				<p>This is a test description for the image displayed above. This statement won't say anything about the image as we are just testing how description would look. Thanks for reading!
-				</p>
-			</div>
+			<!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a> -->
 		</div>
-	{% endfor %}
+	</div>
+	<div class="wedding-desc">
+		<p>This is a test description for the image displayed above. This statement won't say anything about the image as we are just testing how description would look. Thanks for reading!
+		</p>
+	</div>
+</div>
 {% endblock %}
