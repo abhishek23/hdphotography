@@ -109,4 +109,5 @@ font-weight: 400;
 
 .carousel-fade .carousel-item {
   transition-duration: .9s;
+  transition-timing-function: ease-in-out;
 }

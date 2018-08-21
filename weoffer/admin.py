@@ -13,3 +13,5 @@ class EventAdmin(admin.ModelAdmin):
 admin.site.register(models.Event, EventAdmin)
 
 admin.site.register(models.EventImage)
+admin.site.register(models.Featured)
+admin.site.register(models.FeaturedImages)

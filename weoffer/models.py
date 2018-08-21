@@ -11,3 +11,14 @@ class Event(models.Model):
 class EventImage(models.Model):
 	image = models.ImageField(upload_to='event_images')
 	event_id = models.ForeignKey(Event, related_name='images', on_delete=models.CASCADE)
+
+class Featured(models.Model):
+	name = models.CharField(max_length=100)
+	event_id = models.ForeignKey(Event, related_name='featured_ids', on_delete=models.CASCADE)
+	thumbnail = models.ImageField(upload_to='featured_thumbnails')
+	coverImage = models.ImageField(upload_to='featured_cover_images')
+	description = models.TextField()
+
+class FeaturedImages(models.Model):
+	featured_id = models.ForeignKey(Featured, related_name='images', on_delete=models.CASCADE)
+	image = models.ImageField(upload_to='featured_images')
