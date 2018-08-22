@@ -5899,7 +5899,6 @@ button.close {
   opacity: 0;
   transition-duration: .6s;
   transition-property: opacity;
-  transition-timing-function: ease-in-out;
 }
 
 .carousel-fade .carousel-item.active,

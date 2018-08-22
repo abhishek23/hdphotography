@@ -22,7 +22,7 @@
 	position:fixed; 
 	z-index:10; 
 	width:100%; 
-	//background-color: #2B2B2B;
+	background-color: #FFFFFF;
 	color:#1b1209;
 	border-color:transparent; 
 	font-family: futura-pt; 
@@ -78,10 +78,11 @@
 }
 
 .wedding{
-	width: 650px;
-	height: 530px;
+	width: 720px;
+	height: 580px;
 	margin: 0 auto;
 	padding-top: 75px;
+	margin-bottom: 100px;
 }
 
 .wedding-img{
@@ -93,13 +94,13 @@
 	text-align: center;
 	margin-left: -20px;
 	margin-right: -20px;
-	padding-top: 20px;
+	//padding-top: 20px;
 }
 
 .wedding-desc p {
 	font-family: futura-pt-condensed, sans-serif;
-font-style: italic;
-font-weight: 400;
+	font-weight: 150;
+	opacity: 0.8;
 }
 
 .carousel-inner div.carousel-item > img {
@@ -110,4 +111,32 @@ font-weight: 400;
 .carousel-fade .carousel-item {
   transition-duration: .9s;
   transition-timing-function: ease-in-out;
+}
+
+.featured-board{
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-size: 2em;
+	font-weight: 100;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+}
+
+.featured-flex-container{
+	display: flex;
+	justify-content: center;
+}
+
+.thumbnail-featured {
+  height:450px;
+  width:360px;
+  border-radius: 3px;
+  margin:20px;
+}
+
+.thumbnail-featured a > img{
+	height: 100%;
+	width: 100%;
+
 }

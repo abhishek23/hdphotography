@@ -2,6 +2,10 @@
 {% block content %}
 
 <div class="wedding">
+	<div class="wedding-desc">
+		<p>This is a test description for the image displayed below. This statement won't say anything about the image as we are just testing how description would look. Thanks for reading!
+		</p>
+	</div>
 	<div class="wedding-img-container">
 		<div id="eventDetailCarouselFade" class="carousel slide carousel-fade" data-interval="6000" data-pause="false" data-ride="carousel">
 			<div class="carousel-inner">
@@ -21,9 +25,27 @@
 			</a> -->
 		</div>
 	</div>
-	<div class="wedding-desc">
-		<p>This is a test description for the image displayed above. This statement won't say anything about the image as we are just testing how description would look. Thanks for reading!
-		</p>
+</div>
+<h1 class="featured-board text-center"> FEATURED PREWEDDINGS </h1>
+<div class="featured-flex-container">
+	{% for featured in event.featured_ids.all %}
+	<div class="thumbnail-featured">
+		<a href="#">
+			<img src="{{ featured.thumbnail.url }}" alt="Lights">
+		</a>
+	</div>
+	
+	{% endfor %}
+	<div class="thumbnail-featured">
+		<a href="#">
+			<img src="https://static1.squarespace.com/static/56a74ebd1c121044e144939b/t/58f9b1a2c534a56ac07c92fc/1492760185473/NVP_ShivaliKaranveer_luxurywedding_Destinationwedding.jpg?format=500w" alt="Lights">
+		</a>
+	</div>
+	<div class="thumbnail-featured">
+		<a href="#">
+			<img src="https://static1.squarespace.com/static/56a74ebd1c121044e144939b/t/58f9b1a2c534a56ac07c92fc/1492760185473/NVP_ShivaliKaranveer_luxurywedding_Destinationwedding.jpg?format=500w" alt="Lights">
+		</a>
 	</div>
 </div>
+<div style="height:500px; width:500px"></div>
 {% endblock %}
