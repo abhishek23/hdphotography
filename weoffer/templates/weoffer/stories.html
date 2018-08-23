@@ -1,0 +1,15 @@
+{% extends 'weoffer/header.html' %}
+{% block content %}
+
+<div class="wedding" style="width: 1080px; height: 720; margin-bottom: 20px;">
+	<div class="wedding-desc">
+		<p>{{ featured.description }}</p>
+	</div>
+	<div class="wedding-img-container">
+		{% for image in featured.images.all %}
+			<img class="d-block w-100" src="{{image.image.url}}" alt="First slide" style=" margin-bottom: 20px;">
+		{% endfor %}
+	</div>
+</div>
+<div style="height:500px; width:500px"></div>
+{% endblock %}

@@ -30,22 +30,12 @@
 <div class="featured-flex-container">
 	{% for featured in event.featured_ids.all %}
 	<div class="thumbnail-featured">
-		<a href="#">
+		<a href="{% url 'featured_stories' featuredId=featured.id %}">
 			<img src="{{ featured.thumbnail.url }}" alt="Lights">
 		</a>
+		<p class='featured-couple-name'>// {{ featured.name }} //</p>
 	</div>
-	
 	{% endfor %}
-	<div class="thumbnail-featured">
-		<a href="#">
-			<img src="https://static1.squarespace.com/static/56a74ebd1c121044e144939b/t/58f9b1a2c534a56ac07c92fc/1492760185473/NVP_ShivaliKaranveer_luxurywedding_Destinationwedding.jpg?format=500w" alt="Lights">
-		</a>
-	</div>
-	<div class="thumbnail-featured">
-		<a href="#">
-			<img src="https://static1.squarespace.com/static/56a74ebd1c121044e144939b/t/58f9b1a2c534a56ac07c92fc/1492760185473/NVP_ShivaliKaranveer_luxurywedding_Destinationwedding.jpg?format=500w" alt="Lights">
-		</a>
-	</div>
 </div>
 <div style="height:500px; width:500px"></div>
 {% endblock %}

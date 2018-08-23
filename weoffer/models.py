@@ -19,6 +19,10 @@ class Featured(models.Model):
 	coverImage = models.ImageField(upload_to='featured_cover_images')
 	description = models.TextField()
 
+	def __str__(self):
+		return self.event_id.name + ': ' + self.name
+
 class FeaturedImages(models.Model):
 	featured_id = models.ForeignKey(Featured, related_name='images', on_delete=models.CASCADE)
 	image = models.ImageField(upload_to='featured_images')
+

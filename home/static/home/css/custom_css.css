@@ -114,13 +114,11 @@
 }
 
 .featured-board{
-	font-family: futura-pt, sans-serif;
-	font-style: normal;
-	font-size: 2em;
-	font-weight: 100;
-	text-decoration: none;
-	letter-spacing: 0.1em;
-	line-height: 1.2em;
+	font-family: gizmo, sans-serif;
+font-style: normal;
+font-weight: 400;
+	font-size: 36px;
+	line-height: 1.4em;
 }
 
 .featured-flex-container{
@@ -139,4 +137,14 @@
 	height: 100%;
 	width: 100%;
 
+}
+
+.featured-couple-name{
+	text-align: right;
+	color: #333;
+	font-size: 14px;
+	line-height: 1.4em;
+	font-family: "Sacramento script=all rev=2", "Adobe Blank";
+	font-style: italic;
+	font-weight: 300;
 }

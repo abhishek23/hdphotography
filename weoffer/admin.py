@@ -11,7 +11,15 @@ class EventAdmin(admin.ModelAdmin):
 		model = models.Event
 
 admin.site.register(models.Event, EventAdmin)
-
 admin.site.register(models.EventImage)
-admin.site.register(models.Featured)
+
+class FeaturedImagesInline(admin.TabularInline):
+	model = models.FeaturedImages
+
+class FeaturedAdmin(admin.ModelAdmin):
+	inlines = [FeaturedImagesInline]
+	class Meta:
+		model = models.Featured
+
+admin.site.register(models.Featured, FeaturedAdmin)
 admin.site.register(models.FeaturedImages)
