@@ -66,6 +66,10 @@
   text-decoration: none;
 }
 
+.thumbnail a > div > p{
+ 	font-family: 'Satisfy', cursive;
+}
+
 .thumbnail a > div > p:hover{
  	transition: 0.4s;
  	text-shadow: 2px 1px 1px #999;
@@ -98,9 +102,10 @@
 }
 
 .wedding-desc p {
-	font-family: futura-pt-condensed, sans-serif;
-	font-weight: 150;
-	opacity: 0.8;
+	font-family: 'Cookie', cursive;;
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 3px;
 }
 
 .carousel-inner div.carousel-item > img {
@@ -114,11 +119,13 @@
 }
 
 .featured-board{
-	font-family: gizmo, sans-serif;
-font-style: normal;
-font-weight: 400;
+	font-family: 'Molle', cursive;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 36px;
 	line-height: 1.4em;
+	padding-top: 100px;
+	text-transform: capitalize;
 }
 
 .featured-flex-container{
@@ -142,9 +149,9 @@ font-weight: 400;
 .featured-couple-name{
 	text-align: right;
 	color: #333;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.4em;
-	font-family: "Sacramento script=all rev=2", "Adobe Blank";
+	font-family: 'Montez', cursive;
 	font-style: italic;
-	font-weight: 300;
+	font-weight: 600;
 }
