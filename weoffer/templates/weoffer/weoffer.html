@@ -1,6 +1,6 @@
 {% extends 'weoffer/header.html' %}
 {% block content %}
-<div class="container" style="padding-top: 100px;">
+<div class="container weoffer-events" style="">
 	{% for eventRow in eventRows %}
 	<div class="row" style="display: flex;">
 		{% for event in eventRow %}
@@ -8,7 +8,7 @@
 			<div class="thumbnail">
 				<a href="{% url 'event_detail' eventId=event.id %}">
 					<img src="{{ event.thumbnail.url }}" alt="Lights">
-					<div class="caption">
+					<div class="caption" style="color:#1b1209;">
 						<p>{{ event.name }}</p>
 					</div>
 				</a>

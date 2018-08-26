@@ -1,0 +1,171 @@
+* {
+	font-family: 'Montserrat', cursive;
+	font-style: normal;
+	font-weight: 300;
+	transition: 0.6s;
+	color: #1b1209;
+}
+
+.navbar-custom-weoffer{
+	//position:fixed; 
+	z-index:10; 
+	width:100%; 
+	background-color: #FFFFFF;
+	color:#1b1209;
+	border-color:transparent; 
+	font-family: 'Montserrat', cursive;
+	font-transform: uppercase;
+	font-size: 15px;
+}
+
+.navbar-custom-weoffer{
+	border-radius: 0px;
+}
+
+.navbar-custom-weoffer .navbar-nav > a{
+	text-shadow: none;
+	font-family: 'Montserrat', cursive;
+}
+
+.navbar-custom-weoffer .navbar-nav > a:hover{
+	text-shadow: 0px 0px 3px #666;
+	font-weight: 500;
+	transition: 0.9s;
+}
+
+#navbar-weoffer > div > a {
+	color: #3f2a14;
+}
+
+.weoffer-events{
+	padding-top: 20px;
+}
+
+.weoffer-events .row{
+	justify-content: center;
+}
+
+
+.thumbnail {
+	padding: 0;
+	border: none;
+	overflow: auto;
+}
+
+.caption{
+	text-align: center;
+
+}
+
+.thumbnail a {
+  text-decoration: none;
+}
+
+.thumbnail a > div > p{
+ 	font-family: 'Montserrat', cursive;
+ 	text-transform: uppercase;
+}
+
+.thumbnail a > div > p:hover{
+ 	transition: 0.4s;
+ 	text-shadow: 2px 1px 1px #999;
+}
+
+.thumbnail a > img {
+  height:250px;
+  width:100%;
+  border-radius: 3px;
+}
+
+
+.wedding{
+	width: 820px;
+	height: 580px;
+	margin: 0 auto;
+	padding-top: 20px;
+	margin-bottom: 100px;
+}
+
+.wedding-img{
+	width: 100%;
+	height: auto;
+}
+
+.wedding-desc{
+	text-align: center;
+	margin-left: -20px;
+	margin-right: -20px;
+	//padding-top: 20px;
+}
+
+.wedding-desc p {
+	font-family: 'Open Sans', sans-serif;
+	//font-weight: 500;
+	font-size: 14px;
+	//letter-spacing: 3px;
+	opacity: 0.7;
+}
+
+.carousel-inner div.carousel-item > img {
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-fade .carousel-item {
+  transition-duration: .9s;
+  transition-timing-function: ease-in-out;
+}
+
+.featured-board{
+	font-family: 'Josefin Slab', serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1.4em;
+	padding-top: 50px;
+	text-transform: uppercase;
+}
+
+.featured-flex-container{
+	display: flex;
+	justify-content: center;
+}
+
+.thumbnail-featured {
+  height:450px;
+  width:360px;
+  border-radius: 3px;
+  margin:20px;
+}
+
+.thumbnail-featured a > img{
+	height: 100%;
+	width: 100%;
+
+}
+
+.featured-couple-name{
+	text-align: right;
+	color: #333;
+	font-size: 16px;
+	line-height: 1.4em;
+	font-family: 'Dancing Script', cursive;
+	font-style: italic;
+	font-weight: 300;
+	margin-right: 4px;
+}
+
+#storiesCarouselFade .carousel-indicators{
+	bottom: -60px; !important
+} 
+
+#storiesCarouselFade > ol > li {
+	background-color: black;
+	opacity: 0.6;
+	height: 30px;
+	width: 40px;
+}
+
+#storiesCarouselFade > ol > li.active {
+	opacity: 1.0;
+}
