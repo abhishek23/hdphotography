@@ -3,15 +3,33 @@
 
 
 {% block content %}
-	<div class="mx-auto" style="margin-top: 50px;width:370px; height: 100px;">
-		<img src="/media/logo-black.png" style="height: 100%; width: 100%;"/>
+<div class="mx-auto" style="margin-top: 50px;width:350px; height: 100px; border: 1px solid red;">
+	<img src="/media/logo-black.png" style="height: 100%; width: 100%;"/>
+</div>
+<div class="mx-auto contact-info" style="width:350px; border: 1px solid green;">
+	<div class="row text-center mx-auto" style="width: fit-content;">
+		Mobile: +91 8097272579 / +91 8806772086
 	</div>
-	<div class="mx-auto contact-info" style="width: fit-content;font-size: 12px;">
-		<div class="row text-center">
-			Mobile: +91 8097272579 / +91 8806772086
-		</div>
-		<div class="row text-center" style="margin-top: 15px;">
-			Email: harshaddalviphotography@gmail.com
-		</div>
+	<div class="row text-center mx-auto" style="width: fit-content;">
+		Email: harshaddalviphotography@gmail.com
 	</div>
+	<form action="{% url 'contactus' %}" method="post">
+		<div class="row text-center mx-auto">
+			{{ form.name.label }}&nbsp;*<br>
+			<input type="text" style="height: 3em; padding: 7px; width: 100%;">
+		<div>
+		<div class="row text-center mx-auto">
+			{{ form.contactNo.label }}&nbsp;*<br>
+			<input type="text" style="height: 3em; padding: 7px; width: 100%;">
+		<div>
+		<div class="row text-center mx-auto">
+			{{ form.email.label }}&nbsp;*<br>
+			<input type="text" style="height: 3em; padding: 7px; width: 100%;">
+		<div>
+		<div class="row text-center mx-auto">
+			{{ form.query.label }}&nbsp;*<br>
+			<input type="text" style="height: 3em; padding: 7px; width: 100%;">
+		<div>
+	</form>
+</div>
 {% endblock %}
