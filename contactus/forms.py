@@ -1,14 +1,10 @@
-from django import forms
-from django.forms import ModelForm
+from django.forms import ModelForm, Textarea
 from .models import ContactUs
 
 class ContactUsForm(ModelForm):
 	class Meta:
 		model = ContactUs
-		fields = ['name', 'contactNo', 'emailId', 'query']
+		fields = ('name', 'contactNo', 'emailId', 'query')
 		widgets = {
-			'name': forms.TextInput(attrs={'class': 'form-input'}),
-			'contactNo': forms.TextInput(attrs={'class': 'form-input'}),
-			'emailId': forms.TextInput(attrs={'class': 'form-input'}),
-			'query': forms.TextInput(attrs={'class': 'form-input'}),
+			'query': Textarea(attrs={'cols': 80, 'rows': 5}),
 		}

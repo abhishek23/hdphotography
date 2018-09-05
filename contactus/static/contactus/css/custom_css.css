@@ -17,3 +17,7 @@
 .contact-info > form > div.row {
 	margin-top: 7px;
 }
+
+.contact-info > form > div.row > input{
+height: 3em; padding: 7px; width: 100%;
+}

@@ -3,10 +3,10 @@
 
 
 {% block content %}
-<div class="mx-auto" style="margin-top: 50px;width:350px; height: 100px; border: 1px solid red;">
+<div class="mx-auto" style="margin-top: 50px;width:350px; height: 100px;">
 	<img src="/media/logo-black.png" style="height: 100%; width: 100%;"/>
 </div>
-<div class="mx-auto contact-info" style="width:350px; border: 1px solid green;">
+<div class="mx-auto contact-info" style="width: 350px;">
 	<div class="row text-center mx-auto" style="width: fit-content;">
 		Mobile: +91 8097272579 / +91 8806772086
 	</div>
@@ -16,20 +16,20 @@
 	<form action="{% url 'contactus' %}" method="post">
 		<div class="row text-center mx-auto">
 			{{ form.name.label }}&nbsp;*<br>
-			<input type="text" style="height: 3em; padding: 7px; width: 100%;">
-		<div>
+			{{ form.name }}
+		</div>
 		<div class="row text-center mx-auto">
 			{{ form.contactNo.label }}&nbsp;*<br>
-			<input type="text" style="height: 3em; padding: 7px; width: 100%;">
-		<div>
+			{{ form.contactNo }}
+		</div>
 		<div class="row text-center mx-auto">
-			{{ form.email.label }}&nbsp;*<br>
-			<input type="text" style="height: 3em; padding: 7px; width: 100%;">
-		<div>
+			{{ form.emailId.label }}<br>
+			{{ form.emailId}}
+		</div>
 		<div class="row text-center mx-auto">
 			{{ form.query.label }}&nbsp;*<br>
-			<input type="text" style="height: 3em; padding: 7px; width: 100%;">
-		<div>
+			{{ form.query }}
+		</div>
 	</form>
 </div>
 {% endblock %}
