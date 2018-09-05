@@ -21,3 +21,14 @@
 .contact-info > form > div.row > input{
 height: 3em; padding: 7px; width: 100%;
 }
+
+.btn-submit{
+	background-color: #141414;
+	border-width: 1px;
+	border-color: rgb(169, 169, 169);
+	color: #FFF;
+}
+
+.btn-submit:hover{
+	cursor: pointer;
+}
