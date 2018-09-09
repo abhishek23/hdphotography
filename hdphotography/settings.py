@@ -25,7 +25,7 @@ SECRET_KEY = '&vs37lo^(xsqt$em=#)k^!bm6n5gm+y4hcg39vi_-k#g(l_g4l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.56.101', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.56.101', '127.0.0.1', '139.59.24.231']
 
 
 # Application definition
@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'hdphotography.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'hdphotography',
         'HOST': 'localhost',
-        'PORT': 5432,
-        'USER': 'postgres',
-        'PASSWORD': '',
+        'PORT': '',
+        'USER': 'hduser',
+        'PASSWORD': 'wnbr@5',
     }
 }
 
