@@ -15,16 +15,21 @@
 	</div>
 	<form action="{% url 'contactus' %}" method="post">
 		{% csrf_token %}
+		{% if saved %}
+		<div class="alert alert-success" role="alert">
+		  	Query submitted successfully! <br> We will contact you soon. Thanks!
+		</div>
+		{% endif %}
 		<div class="row text-center mx-auto">
-			{{ form.name.label }}&nbsp;*<br>
+			{{ form.name.label }}&nbsp;* {% for error in form.name.errors %} &nbsp;&nbsp;<span class="text-danger"> {{ error }} </span> {% endfor %} <br>
 			{{ form.name }}
 		</div>
 		<div class="row text-center mx-auto">
-			{{ form.contactNo.label }}&nbsp;*<br>
+			{{ form.contactNo.label }}&nbsp;* {% for error in form.contactNo.errors %} &nbsp;&nbsp;<span class="text-danger"> {{ error }} </span> {% endfor %} <br>
 			{{ form.contactNo }}
 		</div>
 		<div class="row text-center mx-auto">
-			{{ form.emailId.label }}<br>
+			{{ form.emailId.label }} {% for error in form.emailId.errors %} &nbsp;&nbsp;<span class="text-danger"> {{ error }} </span> {% endfor %} <br>
 			{{ form.emailId}}
 		</div>
 		<div class="row text-center mx-auto">
