@@ -16,3 +16,10 @@ class ContactUs(models.Model):
 
 	class Meta:
 		verbose_name_plural = "Contact Us"
+
+
+class MyDetails(models.Model):
+
+	logoContactUs = models.ImageField(upload_to='my_details')
+	mobileNos = models.CharField(max_length=30)
+	emailId = models.EmailField(max_length=254)

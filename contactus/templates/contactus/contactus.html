@@ -4,14 +4,14 @@
 
 {% block content %}
 <div class="mx-auto" style="margin-top: 50px;width:350px; height: 100px;">
-	<img src="/media/logo-black.png" style="height: 100%; width: 100%;"/>
+	<img src="{{ myDetails.logoContactUs.url }}" style="height: 100%; width: 100%;"/>
 </div>
 <div class="mx-auto contact-info" style="width: 350px;">
 	<div class="row text-center mx-auto" style="width: fit-content;">
-		Mobile: +91 8097272579 / +91 8806772086
+		Mobile: {{ myDetails.mobileNos }}
 	</div>
 	<div class="row text-center mx-auto" style="width: fit-content;">
-		Email: harshaddalviphotography@gmail.com
+		Email: {{ myDetails.emailId }}
 	</div>
 	<form action="{% url 'contactus' %}" method="post">
 		{% csrf_token %}

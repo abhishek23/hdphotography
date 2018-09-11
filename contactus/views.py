@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .forms import ContactUsForm
+from .forms import ContactUsForm, MyDetails
 
 def index(request):
 	context = {}
@@ -12,5 +12,6 @@ def index(request):
 			context.update({'saved': True})
 	else:
 		contactUsForm = ContactUsForm()
-	context.update({'form': contactUsForm})
+	myDetails = MyDetails.objects.get(pk=1)
+	context.update({'form': contactUsForm, 'myDetails': myDetails})
 	return render(request, 'contactus/contactus.html', context)
