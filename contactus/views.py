@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
-from .forms import ContactUsForm, MyDetails
+from .forms import ContactUsForm
+from .models import MyDetails
 
 def index(request):
 	context = {}
