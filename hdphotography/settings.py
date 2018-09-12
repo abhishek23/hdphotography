@@ -14,13 +14,12 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-print("*************", BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&vs37lo^(xsqt$em=#)k^!bm6n5gm+y4hcg39vi_-k#g(l_g4l'
+SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,11 +79,11 @@ WSGI_APPLICATION = 'hdphotography.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'hdphotography',
+        'NAME': os.environ['DJANGO_DB_NAME'],
         'HOST': 'localhost',
         'PORT': '',
-        'USER': 'hduser',
-        'PASSWORD': 'wnbr@5',
+        'USER': os.environ['DJANGO_DB_USER'],
+        'PASSWORD': os.environ['DJANGO_DB_PWD'],
     }
 }
 
