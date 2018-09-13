@@ -32,3 +32,12 @@ height: 3em; padding: 7px; width: 100%;
 	cursor: pointer;
 	box-shadow: 2px 2px 3px #999;
 }
+
+.social-media > div {
+	margin: 0 auto;
+	width: 30%;
+}
+
+.social-media > div > a > i {
+	font-size: 36px;
+}
