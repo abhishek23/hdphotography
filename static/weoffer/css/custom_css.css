@@ -1,10 +1,3 @@
-* {
-	font-family: 'Montserrat', cursive;
-	font-style: normal;
-	font-weight: 300;
-	transition: 0.6s;
-	color: #1b1209;
-}
 
 .navbar-custom-weoffer{
 	//position:fixed; 
@@ -13,7 +6,7 @@
 	background-color: #FFFFFF;
 	color:#1b1209;
 	border-color:transparent; 
-	font-family: 'Montserrat', cursive;
+	font-family: futura-pt; 
 	font-transform: uppercase;
 	font-size: 15px;
 }
@@ -24,7 +17,6 @@
 
 .navbar-custom-weoffer .navbar-nav > a{
 	text-shadow: none;
-	font-family: 'Montserrat', cursive;
 }
 
 .navbar-custom-weoffer .navbar-nav > a:hover{
@@ -54,7 +46,6 @@
 
 .caption{
 	text-align: center;
-
 }
 
 .thumbnail a {

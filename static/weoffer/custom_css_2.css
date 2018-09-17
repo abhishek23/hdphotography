@@ -1,13 +1,19 @@
+* {
+	font-family: 'Montserrat', cursive;
+	font-style: normal;
+	font-weight: 300;
+	transition: 0.6s;
+	color: #1b1209;
+}
 
 .navbar-custom-weoffer{
 	//position:fixed; 
 	z-index:10; 
 	width:100%; 
-	/*background-color: #FFFFFF;*/
-	background-color: transparent;
+	background-color: #FFFFFF;
 	color:#1b1209;
 	border-color:transparent; 
-	font-family: futura-pt; 
+	font-family: 'Montserrat', cursive;
 	font-transform: uppercase;
 	font-size: 15px;
 }
@@ -18,6 +24,7 @@
 
 .navbar-custom-weoffer .navbar-nav > a{
 	text-shadow: none;
+	font-family: 'Montserrat', cursive;
 }
 
 .navbar-custom-weoffer .navbar-nav > a:hover{
@@ -47,6 +54,7 @@
 
 .caption{
 	text-align: center;
+
 }
 
 .thumbnail a {
@@ -162,49 +170,11 @@
 	opacity: 1.0;
 }
 
-ul.weoffer-slider{
+ul{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100vh;
 	background: #ccc;
-	margin: 0;
-	padding: 0;
-}
-
-ul.weoffer-slider li{
-	list-style: none;
-	position: relative;
-	width: 20%;
-	height: 100%;
-	border-right: 1px solid #000;
-	box-sizing: border-box;
-	float: left;
-	transition: 0.5s;
-	text-align: center;
-	overflow: hidden;
-}
-
-ul.weoffer-slider li:hover{
-	width: 60%;
-	overflow: hidden;
-}
-
-.weoffer-slider:hover li{
-	width: 10%;
-}
-
-.weoffer-slider li .content{
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.weoffer-slider li:hover .content{
-    bottom: 0;
-    transition: 0.5s;
-    transition-delay: 0.5s;
 }
