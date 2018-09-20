@@ -195,16 +195,35 @@ ul.weoffer-slider li:hover{
 	width: 10%;
 }
 
-.weoffer-slider li .content{
+.weoffer-slider li .content h2{
     position: absolute;
     left: 0;
     bottom: -100%;
     width: 100%;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
 }
 
-.weoffer-slider li:hover .content{
+.weoffer-slider li:hover .content h2{
     bottom: 0;
     transition: 0.5s;
     transition-delay: 0.5s;
+}
+
+.weoffer-slider li div h1{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    font-size: 77px;
+    //font-style: italic;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 70%;
+    transform-origin: 10%;
+    opacity: 0.6;
+    color: #FFF;
+}
+
+.weoffer-slider li:hover .content h1{
+    display: none;
 }
