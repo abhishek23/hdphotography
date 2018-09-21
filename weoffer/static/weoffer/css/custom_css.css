@@ -184,7 +184,29 @@ ul.weoffer-slider li{
 	transition: 0.5s;
 	text-align: center;
 	overflow: hidden;
-	background-size: cover;
+}
+
+ul.weoffer-slider li:nth-child(1){
+    background: url("http://139.59.24.231/media/event_thumbnails/HD_0729_COPY__hO6liUl.jpg");
+    background-size: cover;
+	background-position: left;
+}
+ul.weoffer-slider li:nth-child(2){
+    background: url("http://139.59.24.231/media/event_thumbnails/HD_0300.jpg");
+    background-size: cover;
+	background-position: left;
+}
+ul.weoffer-slider li:nth-child(3){
+    background: url("http://139.59.24.231/media/event_thumbnails/2B6A0187.jpg");
+    background-size: cover;
+	background-position: left;
+}ul.weoffer-slider li:nth-child(4){
+    background: url("http://139.59.24.231/media/event_thumbnails/Baby_SuKYy21_7VPCe0Y.jpg");
+    background-size: cover;
+	background-position: left;
+}ul.weoffer-slider li:nth-child(5){
+    background: url("http://139.59.24.231/media/event_thumbnails/840A9455.jpg");
+    background-size: cover;
 	background-position: left;
 }
 
