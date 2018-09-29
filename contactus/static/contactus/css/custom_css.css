@@ -30,11 +30,13 @@ height: 3em; padding: 7px; width: 100%;
 
 .btn-submit:hover{
 	cursor: pointer;
-	box-shadow: 2px 2px 3px #999;
+	//box-shadow: 2px 2px 3px #999;
+	background-color: #444444;
 }
 
 ul.social-media-ul{
 	margin: 0;
+	margin-top: 25px;
 	padding: 0;
 	display: flex;
 }
@@ -46,9 +48,9 @@ ul.social-media-ul li {
 ul.social-media-ul li a{
 	display: block;
 	position: relative;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
 	font-size: 20px;
 	text-align: center;
 	text-decoration: none;
