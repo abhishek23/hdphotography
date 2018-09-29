@@ -226,7 +226,10 @@ ul.weoffer-slider li:hover{
     width: 100%;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    font-size: 50px;
+    font-weight: 900;
+    font-size: 77px;
+    opacity: 0.6;
+    color: #FFF;
 }
 
 .weoffer-slider li:hover .content h2{
