@@ -186,7 +186,7 @@ ul.weoffer-slider li{
 	overflow: hidden;
 }
 
-ul.weoffer-slider li:nth-child(1){
+/*ul.weoffer-slider li:nth-child(1){
     background: url("http://139.59.24.231/media/event_thumbnails/HD_0729_COPY__hO6liUl.jpg");
     background-size: cover;
 	background-position: left;
@@ -208,7 +208,7 @@ ul.weoffer-slider li:nth-child(3){
     background: url("http://139.59.24.231/media/event_thumbnails/840A9455.jpg");
     background-size: cover;
 	background-position: left;
-}
+}*/
 
 ul.weoffer-slider li:hover{
 	width: 60%;

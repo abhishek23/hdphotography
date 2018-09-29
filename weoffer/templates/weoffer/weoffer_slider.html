@@ -1,35 +1,13 @@
 {% extends 'weoffer/header.html' %}
 {% block content %}
 <ul class="weoffer-slider">
-	<li>
-		<div class="content">
-			<h1>PREWEDDING</h1>
-			<h2>PREWEDDING</h2>
+	{% for event in events %}
+	<li style="background: url('{{ event.thumbnail.url }}');background-size: cover;background-position: left;">
+		<div class="content text-uppercase">
+			<h1>{{ event.name }}</h1>
+			<h2>{{ event.name }}</h2>
 		</div>
 	</li>
-	<li>
-		<div class="content">
-			<h1>ENGAGEMENT</h1>
-			<h2>ENGAGEMENT</h2>
-		</div>
-	</li>
-	<li>
-		<div class="content">
-			<h1>WEDDING</h1>
-			<h2>WEDDING</h2>
-		</div>
-	</li>
-	<li>
-		<div class="content">
-			<h1>BABYSHOOT</h1>
-			<h2>BABYSHOOT</h2>
-		</div>
-	</li>
-	<li>
-		<div class="content">
-			<h1>PORTFOLIO</h1>
-			<h2>PORTFOLIO</h2>
-		</div>
-	</li>
+	{% endfor %}
 </ul>
 {% endblock %}
