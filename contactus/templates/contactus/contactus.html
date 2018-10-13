@@ -7,10 +7,10 @@
 	<img src="{{ myDetails.logoContactUs.url }}" style="height: 100%; width: 100%;"/>
 </div>
 <div class="mx-auto contact-info" style="width: 350px;">
-	<div class="row text-center mx-auto" style="width: fit-content;">
+	<div class="row text-center mx-auto" style="display: table;">
 		Mobile: {{ myDetails.mobileNos }}
 	</div>
-	<div class="row text-center mx-auto" style="width: fit-content;">
+	<div class="row text-center mx-auto" style="display: table;">
 		Email: {{ myDetails.emailId }}
 	</div>
 	<form action="{% url 'contactus' %}" method="post">
@@ -37,7 +37,7 @@
 			{{ form.query }}
 		</div>
 		<div class="row text-center mx-auto">
-			<input type="submit" class="btn-submit" style="width: 30%; margin: 0 auto;">
+			<input type="submit" value="Submit" class="btn-submit" style="width: 30%; margin: 0 auto;">
 		</div>
 		<div class="row text-center" style="margin-top: 10px;">
 			<div style="margin: 0 auto;">
